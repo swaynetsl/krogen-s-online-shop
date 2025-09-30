@@ -1,0 +1,32 @@
+    html, body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background: #35424a;
+        color: #FFD700;
+        padding: 20px 0;
+    }
+    h1, h2 {
+        margin: 0;
+    }
+    #products, #about, #contacts {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product, .about-section, .contact-section {
+        background: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        width: 200px;
+    }
+    .product img, .about-section img, .contact-section img {
+        max-width: 100%;
+        height: auto;
+    }
