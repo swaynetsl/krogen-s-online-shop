@@ -30,3 +30,9 @@
         max-width: 100%;
         height: auto;
     }
+    .logo {
+        max-width: 150px; /* change size */
+        height: auto;   /* keeps aspects ratio */
+        display: block; /* removes inline spacing */
+        margin: 20px auto; /* centers the logo */
+    }
