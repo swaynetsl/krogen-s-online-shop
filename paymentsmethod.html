@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="color: hwb(62 0% 0%);">Contact Us - KroGen's Online Shop</title>
+    <title style="color: hwb(62 0% 0%);">Payment - KroGen's Online Shop</title>
     <style>
         html, body {
             font-family: Arial, sans-serif;
@@ -82,45 +82,70 @@
 </head>
 <body>
     <header>
+
         <img src="images/logo2.png" alt="KroGen's Online Shop Logo" class="logo">
-        <h1>Welcome to KroGen's Online Shop!</h1>
+        <h1>Payment</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="about.html">About</a>
         <a href="contacts.html" class="active" aria-current="page">Contact</a>
-        <a href="paymentsmethod.html"> Payments</a>
+        <a href="paymentsmethod.html">Payments</a>
     </nav>
     <main>
-        <section id="hero">
-        </br>
-        <div style="max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; border-radius: 5px;">
-            <h2>Shop the Latest Products</h2>
-      <div style="text-align: center;"> <p>Our one-stop destination for quality products at great prices. At Krogen’s, 
-        we believe shopping should be easy, affordable, and enjoyable. That’s why we’ve created a simple online experience where you can browse, shop, 
-        and get your favorite items delivered straight to your door.</p>
-       <ul>
-           <li>Wide Range of shirts – From everyday essentials to unique finds.</li>
-           <li>Affordable Prices – Quality that won’t break the bank.</li>
-           <li>Fast & Reliable Delivery – Shop with confidence and convenience.</li>
-           <li>Customer First –  Friendly support whenever you need it.</li>
-       </ul>
-       <a href="products.html">View All Products</a>
-        
+        <div class="container">
+            <section>
+                <h2>Payment Via BSP (SMS banking)</h2>
+                <p>To make a payment via BSP SMS banking, please follow these steps:</p>
+                <ol>
+                    <li>Dial *131#.</li>
+                    <li>Select "Funds Transfer" from the menu.</li>
+                    <li>Choose "Other BSP accounts" </li>
+                    <li>Enter the amount you wish to send.</li>
+                    <li>And send it to this ACC# 7027972996:</li>
+                    <li>Do take a screenshot of the transaction and send it to us via the contact form below.</li>
+                    <ul>
+                    </ul>
+                    <li>Confirm the payment details and submit.</li>
+                </ol>
             </section>
+            <section>
+                <h2>Payment Form</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="75a1c1a6-861c-495b-a630-0db59e7e00b2">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <strong>Enter your name</strong><input id="name" type="text" name="name" required> 
+    <strong>Enter your phone number</strong><input id="phone" type="tel" name="phone" required>
+    <strong>Enter your email</strong><input id="email" type="email" name="email" required> 
+    <strong>Enter the payment amount</strong><input id="amount" type="text" name="amount" required>
+    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+        <input type="file" name="screenshot" accept="image/*" required>
+       <button type="submit">Submit Payment</button>
+       </form>
+    
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    
+
+</form>
+
+            </section>
+        </div>
     </main>
-    <div style="max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; border-radius: 5px;">
-   <h2> Why is KroGen's Online Shop the Best Choice?</h2>
-   <p>At KroGen's, we prioritize your shopping experience. Here’s why we stand out:</p>
-   <ul>
-       <li>Quality Assurance – We guarantee the quality of our products.</li>
-       <li>Customer-Centric – Your satisfaction is our top priority.</li>
-       <li>Easy Returns – Hassle-free return policy for your peace of mind.</li>
-   </ul>
-<p>We’re more than just an online shop—we’re a community that values trust, quality, and great service. Whether you’re looking for the latest trends, home essentials, or special gifts, Krogen’s Online Shop has something for everyone.</p>
-</div>
+    </br>
+    </br>
     <footer style="background: #35424a; color: #fff; padding: 15px 0; text-align: center;">
     <p style="margin: 0;">&copy; 2025 KroGen's Online Shop</p>
        
     </footer>
+    
+</body>
+</html>
